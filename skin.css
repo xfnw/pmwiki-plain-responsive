@@ -562,3 +562,6 @@ table.sortable th.dir-d::after {
     to   { opacity: 1; }
 }
 
+:target {
+   background-color: #ffa;
+}
