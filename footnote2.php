@@ -57,6 +57,8 @@ SDV($FootnoteBacklinkCharacter, '&uArr;');
 
 ## [^footnote text^] and [^#^] to list footnotes with blue line or [^@^] to list them without
 Markup("[^",'<split','/\[\^(.*?)\^\]/s',"Footnote");
+Markup("checkbox", "inline", "/\[ \]/", "<input type=checkbox class=checkbox disabled>");
+Markup("checkedbox", "inline", "/\[x\]/", "<input type=checkbox class=checkbox disabled checked>");
 
 function Footnote($m) {
 	static $fngroup = 1, $fncount = 0, $fntext = array();
