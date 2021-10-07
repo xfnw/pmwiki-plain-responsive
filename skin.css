@@ -256,7 +256,11 @@ code.escaped {
   text-indent: 0;
 }
 .vspace { margin-top:25px; }
-.indent { margin-left:15px; }
+.indent {
+    padding-left: 15px;
+    border-left: 1px solid lightgray;
+    margin-left: 5px;
+}
 .outdent { margin-left:15px; text-indent:-15px; }
 a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
 a.createlink { text-decoration:none; position:relative; top:-7px;
@@ -495,7 +499,6 @@ table.sortable th.dir-d::after {
     padding-left:10px;
   }
   .vspace { margin-top: 20px; }
-  .indent { margin-left:40px; }
   .outdent { margin-left:40px; text-indent:-40px; }
   
   .rtl .indent, .rtl.indent, .rtl .outdent, .rtl.outdent {
