@@ -83,7 +83,7 @@ function Footnote($m) {
 		}
 		$fnid = $fngroup . '_' . $fncount;
 	
-		$out = ($fn_str_parts[2] != '' && $fntext[$fncount] == '#') ? '' : "<sup><a class='footnote' id='fnr$fnid' href='#fn$fnid'>[$fncount]</a></sup>";
+		$out = (isset($fn_str_parts[2]) && $fn_str_parts[2] != '' && $fntext[$fncount] == '#') ? '' : "<sup><a class='footnote' id='fnr$fnid' href='#fn$fnid'>[$fncount]</a></sup>";
 		global $FootnoteBacklinkCharacter;
 		if ($fn_str != '') {
 			$fntext[$fncount] = "<div class='footnote' id='fn$fnid'>\n" . 
