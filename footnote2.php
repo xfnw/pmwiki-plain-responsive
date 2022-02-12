@@ -59,6 +59,7 @@ SDV($FootnoteBacklinkCharacter, '&uArr;');
 Markup("[^",'<split','/\[\^(.*?)\^\]/s',"Footnote");
 Markup("checkbox", "inline", "/\[ \]/", "<input type=checkbox class=checkbox disabled>");
 Markup("checkedbox", "inline", "/\[x\]/", "<input type=checkbox class=checkbox disabled checked>");
+Markup("citationneeded", "inline", "/\{\{(cn|[Cc]itation needed)(\|(reason|date)=.+?)?\}\}/", "<sup>[<em>citation needed</em>]</sup>");
 
 function Footnote($m) {
 	static $fngroup = 1, $fncount = 0, $fntext = array();
